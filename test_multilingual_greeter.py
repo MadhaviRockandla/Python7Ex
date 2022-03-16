@@ -2,6 +2,7 @@ from unittest import TestCase
 from unittest.mock import patch
 from io import StringIO
 import multilingual_greeter
+import multilingual_greeter_v2
 
 
 class MultilingualGreeterTest(TestCase):
@@ -93,3 +94,4 @@ class MultilingualGreeterTest(TestCase):
         }
         multilingual_greeter.greet("Jules Winnfield", greetings_dict, 3)
         self.assertEqual("Olá Jules Winnfield\n", stdout_mock.getvalue())
+
